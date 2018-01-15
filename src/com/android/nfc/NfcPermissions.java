@@ -24,12 +24,15 @@ public class NfcPermissions {
         }
     }
 
+    // In order to share NFC Service between host and containers,
+    // removing permission temaprarily
     public static void enforceAdminPermissions(Context context) {
-        context.enforceCallingOrSelfPermission(ADMIN_PERM, ADMIN_PERM_ERROR);
+        //context.enforceCallingOrSelfPermission(ADMIN_PERM, ADMIN_PERM_ERROR);
     }
 
-
+    // In order to share NFC Service between host and containers,
+    // removing permission temaprarily
     public static void enforceUserPermissions(Context context) {
-        context.enforceCallingOrSelfPermission(NFC_PERMISSION, NFC_PERM_ERROR);
+        //context.enforceCallingOrSelfPermission(NFC_PERMISSION, NFC_PERM_ERROR);
     }
 }
